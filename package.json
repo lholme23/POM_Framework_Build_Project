@@ -1,0 +1,26 @@
+{
+  "name": "pom_framework_build_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lholme23/POM_Framework_Build_Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/lholme23/POM_Framework_Build_Project/issues"
+  },
+  "homepage": "https://github.com/lholme23/POM_Framework_Build_Project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.3"
+  }
+}

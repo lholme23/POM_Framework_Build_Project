@@ -2,7 +2,8 @@ import { test } from '@playwright/test';
 import { BankLoginPage } from '../../pages/bank/LoginPage.js';
 import { BankDashboardPage } from '../../pages/bank/DashboardPage.js';
 import { BankTransferPage } from '../../pages/bank/TransferPage.js';
-import { credentials } from '../../test-data/credentials.js'; 
+import { credentials, users } from '../../test-data/credentials.js'; 
+import { logger } from '../../utils/logger.js';
 
 test('Mini Bank Test- Log In to Transfer Page', async ({ page }) => {
 
@@ -12,7 +13,7 @@ const bankDashboard = new BankDashboardPage(page);
 
 await bankLogin.goto();
 await bankLogin.assertLoaded();
-console.log('1. Go to Log In page');
+logger.info('Go to Log In page');
 
 await bankLogin.login(credentials.email, credentials.password);
 console.log('2. Logging In');
